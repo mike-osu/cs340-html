@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>Job App Tracker</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <ul id="menu">
+    <li id="menuItem"><a href="/">Home</a></li>
+    <li id="menuItem"><a href="/companies.html">Companies</a></li>
+    <li id="menuItem"><a href="/candidates.html">Candidates</a></li>
+    <li id="menuItem"><a class="active" href="/jobs.html">Jobs</a></li>
+    <li id="menuItem"><a href="/jobtypes.html">Job Types</a></li>
+    <li id="menuItem"><a href="/applications.html">Applications</a></li>
+  </ul>   
+
+  <ul>
+    <li>List jobs</li>
+    <li>Enter a new job</li>
+    <li>Update a job (allow setting job type to NULL)</li>
+  </ul>
+
+  <table cellpadding="4" cellspacing="4">
+    <tr>
+      <th>job_id</th>
+      <th>title</th>
+      <th>location</th>
+      <th>descripton</th>
+      <th>is_active</th>
+      <th>company</th>
+      <th>job_type</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Software Engineer</td>
+      <td>remote</td>
+      <td>Write Java Code</td>
+      <td>true</td>
+      <td>Hooli</td>
+      <td>Technical</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Administrative Assistant</td>
+      <td>Los Angeles</td>
+      <td>Assist the CEO</td>
+      <td>true</td>
+      <td>Hooli</td>
+      <td>Administrative</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Manager</td>
+      <td>New Mexico</td>
+      <td>Supervise fast food employees</td>
+      <td>true</td>
+      <td>Los Pollos Hermanos</td>
+      <td></td>
+    </tr>
+  </table>    
+
+  <br /><br />
+
+  <form>
+    <table cellpadding="4" cellspacing="4">
+      <tr>
+        <td>title</td><td><input text /></td>
+      </tr>
+        <td>location</td><td><input text /></td>
+      <tr>
+        <td>description</td><td><input text /></td>
+      </tr>
+      <tr>
+        <td>company</td>
+        <td>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </td>
+      </tr>   
+      <tr>
+        <td>job_type</td><td><input text /></td>
+      </tr>          
+      <tr>
+        <td colspan="2"><input type="submit" value="Add" /></td>  
+      </tr>
+    </table>
+  </form>  
+
+  <form>
+    <table cellpadding="4" cellspacing="4">
+      <tr>
+        <th>job to update</th>
+        <td>
+          <select>
+            <option value="">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>title</td><td><input text /></td>
+      </tr>
+        <td>location</td><td><input text /></td>
+      <tr>
+        <td>description</td><td><input text /></td>
+      </tr>
+      <tr>
+        <td>is_active</td><td><input text /></td>
+      </tr>  
+      <tr>
+        <td>job_type</td><td><input text /></td>
+      </tr>          
+      <tr>
+        <td colspan="2"><input type="submit" value="Update" /></td>  
+      </tr>
+    </table>
+  </form>   
+</body>
+</html>
