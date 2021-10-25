@@ -18,7 +18,45 @@
     <ul>
       <li>List contacts</li>
       <li>Enter a new contact</li>
+      <li>Link contact to company via company_id</li>
     </ul>
+
+    <table cellpadding="4" cellspacing="4">
+      <tr>
+        <th>contact_id</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>email_address</th>
+        <th>company_id</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Gus</td>
+        <td>Fring</td>
+        <td>gusfring@emaildomain.com</td>
+        <td>3</td>
+      </tr>
+
+    </table>    
+
+    <br /><br />
+
+    <form>
+      <table cellpadding="4" cellspacing="4">
+        <tr>
+          <td>first_name</td><td><input text /></td>
+        </tr>
+          <td>last_name</td><td><input text /></td>
+        <tr>
+          <td>email_address</td><td><input text /></td>
+        <tr>
+          <td>company_id<small> (number)</small></td><td><input text /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Add" /></td>  
+        </tr>
+      </table>
+    </form>
 
 </body>
 </html>
