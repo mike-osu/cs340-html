@@ -20,5 +20,91 @@
     <li>Enter a new job application</li>
     <li>Delete a job application</li>
   </ul>
+
+  <table cellpadding="4" cellspacing="4">
+    <tr>
+      <th>title</th>
+      <th>location</th>
+      <th>company</th>
+      <th>is_active</th>
+      <th>job_type_code</th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+      <th>date_applied</th>
+      <th></th>
+    </tr>  
+    <tr>
+      <td>Software Engineer</td>
+      <td>remote</td>
+      <td>Hooli</td>
+      <td>true</td>
+      <td>TECH</td>
+      <td>Joe</td>
+      <td>Blow</td>
+      <td>joe@blow.com</td>
+      <td>2021-10-25</td>
+      <td><form><input type="submit" value="Delete" /></form></td>
+    </tr> 
+    <tr>
+      <td>Software Engineer</td>
+      <td>remote</td>
+      <td>Hooli</td>
+      <td>true</td>
+      <td>TECH</td>
+      <td>Darth</td>
+      <td>Vader</td>
+      <td>darthvader@empire.com</td>
+      <td>2021-10-26</td>
+      <td><form><input type="submit" value="Delete" /></form></td>
+    </tr> 
+    <tr>
+      <td>Administrative Assistant</td>
+      <td>Los Angeles</td>
+      <td>Acme Corporation</td>
+      <td>true</td>
+      <td>ADMIN</td>
+      <td>Vito</td>
+      <td>Corleone</td>
+      <td>godfather@mafia.com</td>
+      <td>2021-10-22</td>
+      <td><form><input type="submit" value="Delete" /></form></td>
+    </tr>     
+
+  </table>
+
+  <hr />
+
+  <br />
+  <h3>Submit a candidate job application</h3>
+
+  <form>
+    <table cellpadding="4" cellspacing="4">
+      <tr>
+        <td><b>Job:</b></td>
+        <td>
+          <select>
+            <option value="1">Software Engineer, Hooli</option>
+            <option value="2">Administrative Assistant, Acme Corporation</option>
+            <option value="3">Manager, Los Pollos Hermanos</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Candidate:</b></td>
+        <td>
+          <select>
+            <option value="1">Joe Blow</option>
+            <option value="2">Darth Vader</option>
+            <option value="3">Vito Corleone</option>
+          </select> 
+        </td>
+      </tr>    
+      <tr>
+        <td colspan="2"><input type="submit" value="Apply" /></td>   
+      </tr>
+    </table>
+  </form>
+
 </body>
 </html>
