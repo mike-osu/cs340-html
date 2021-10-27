@@ -46,7 +46,7 @@
       <td>Los Angeles</td>
       <td>Assist the CEO</td>
       <td>true</td>
-      <td>Hooli</td>
+      <td>Acme Corporation</td>
       <td>Administrative</td>
     </tr>
     <tr>
@@ -60,29 +60,39 @@
     </tr>
   </table>    
 
-  <br /><br />
+  <hr /><br />
 
+  <h3>Add a new Job</h3>
   <form>
     <table cellpadding="4" cellspacing="4">
       <tr>
-        <td>title</td><td><input text /></td>
+        <td>title <small>(required)</small></td><td><input text /></td>
       </tr>
-        <td>location</td><td><input text /></td>
+        <td>location <small>(required)</small></td><td><input text /></td>
       <tr>
-        <td>description</td><td><input text /></td>
+        <td>description <small>(required)</small></td><td><textarea rows="6" cols="50"></textarea></td>
       </tr>
       <tr>
-        <td>company</td>
+        <td>company <small>(required)</small></td>
         <td>
           <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+            <option value="">Select...</option>
+            <option value="1">Hooli</option>
+            <option value="2">Acme Corporation</option>
+            <option value="3">Los Pollos Hermanos</option>
           </select>
         </td>
       </tr>   
       <tr>
-        <td>job_type</td><td><input text /></td>
+        <td>job_type</td>
+        <td>
+          <select>
+            <option value="">Select...</option>
+            <option value="EXEC">Executive</option>
+            <option value="TECH">Technical</option>
+            <option value="ADMIN">Administrative</option>
+          </select>                   
+        </td>
       </tr>          
       <tr>
         <td colspan="2"><input type="submit" value="Add" /></td>  
@@ -90,31 +100,43 @@
     </table>
   </form>  
 
+  <h3>Update a Job</h3>
   <form>
     <table cellpadding="4" cellspacing="4">
       <tr>
-        <th>job to update</th>
+        <td><b>job to update</b></td>
         <td>
           <select>
             <option value="">Select...</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+            <option value="1">Software Engineer, Hooli</option>
+            <option value="2">Administrative Assistant, Acme Corporation</option>
+            <option value="3">Manager, Los Pollos Hermanos</option>
           </select>
         </td>
       </tr>
       <tr>
-        <td>title</td><td><input text /></td>
+        <td>title <small>(required)</small></td><td><input text /></td>
       </tr>
-        <td>location</td><td><input text /></td>
+        <td>location <small>(required)</small></td><td><input text /></td>
       <tr>
-        <td>description</td><td><input text /></td>
+        <td>description <small>(required)</small></td><td><input text /></td>
       </tr>
       <tr>
-        <td>is_active</td><td><input text /></td>
+        <td>is_active</td>
+        <td>
+          <input type="checkbox">
+        </td>
       </tr>  
       <tr>
-        <td>job_type</td><td><input text /></td>
+        <td>job_type</td>
+        <td>
+          <select>
+            <option value="">Select...</option>
+            <option value="EXEC">Executive</option>
+            <option value="TECH">Technical</option>
+            <option value="ADMIN">Administrative</option>
+          </select>          
+        </td>
       </tr>          
       <tr>
         <td colspan="2"><input type="submit" value="Update" /></td>  
