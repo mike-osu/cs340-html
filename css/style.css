@@ -42,3 +42,18 @@ li#menuItem a {
 li#menuItem a:hover:not(.active) {
 	background-color: #111;
 }
+
+.aTable {
+    border-spacing: 2px;
+}
+.aTable tr:nth-child(even) {
+    background-color: #DCDCDC;
+}
+
+.aTable tr:nth-child(odd) {
+    background-color: #B8B8B8
+}
+
+.aTable td {
+	padding: 5px;
+}
