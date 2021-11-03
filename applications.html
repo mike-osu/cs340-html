@@ -15,77 +15,74 @@
     <li id="menuItem"><a class="active" href="applications.html">Applications</a></li>
   </ul> 
 
-  <ul>
-    <li>List job applications</li>
-    <li>Enter a new job application</li>
-    <li>Delete a job application</li>
-  </ul>
+  <br>
+  <h2>Job App Tracker:  Enter and Delete Job Applications</h2>
+  <p></p>
+  <br>
 
   <table class="aTable">
     <tr>
-      <th>title</th>
-      <th>location</th>
-      <th>company</th>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Company</th>
       <th>is_active</th>
       <th>job_type_code</th>
-      <th>first_name</th>
-      <th>last_name</th>
-      <th>email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
       <th>date_applied</th>
       <th>is_archived?</th>
       <th></th>
     </tr>  
     <tr>
       <td>Software Engineer</td>
-      <td>remote</td>
+      <td>Remote</td>
       <td>Hooli</td>
-      <td>true</td>
+      <td>Yes</td>
       <td>TECH</td>
       <td>Joe</td>
       <td>Blow</td>
       <td>joe@blow.com</td>
       <td>2021-10-25</td>
       <td><form><input type="checkbox" /></form></td>
-      <td><form><input type="submit" value="Delete" /></form></td>
+      <td><form><input type="submit" value="Delete Application" /></form></td>
     </tr> 
     <tr>
       <td>Software Engineer</td>
-      <td>remote</td>
+      <td>Remote</td>
       <td>Hooli</td>
-      <td>true</td>
+      <td>Yes</td>
       <td>TECH</td>
       <td>Darth</td>
       <td>Vader</td>
       <td>darthvader@empire.com</td>
       <td>2021-10-26</td>
       <td><form><input type="checkbox" /></form></td>
-      <td><form><input type="submit" value="Delete" /></form></td>
+      <td><form><input type="submit" value="Delete Application" /></form></td>
     </tr> 
     <tr>
       <td>Administrative Assistant</td>
       <td>Los Angeles</td>
       <td>Acme Corporation</td>
-      <td>true</td>
+      <td>No</td>
       <td>ADMIN</td>
       <td>Vito</td>
       <td>Corleone</td>
       <td>godfather@mafia.com</td>
       <td>2021-10-22</td>
       <td><form><input type="checkbox" /></form></td>
-      <td><form><input type="submit" value="Delete" /></form></td>
+      <td><form><input type="submit" value="Delete Application" /></form></td>
     </tr>     
-
   </table>
 
-  <hr />
-
-  <br />
-  <h3>Record a candidate job application</h3>
-
-  <form>
+  <div id="form">
+    <form>
+      <fieldset>
+      <legend><h3>Record a Candidate Job Application
+        <small>( * indicates a required field )</h3></legend>
     <table cellpadding="4" cellspacing="4">
       <tr>
-        <td><b>Job:</b></td>
+        <td>Job *</td>
         <td>
           <select>
             <option value="1">Software Engineer, Hooli</option>
@@ -95,7 +92,7 @@
         </td>
       </tr>
       <tr>
-        <td><b>Candidate:</b></td>
+        <td>Candidate *</td>
         <td>
           <select>
             <option value="1">Joe Blow</option>
@@ -104,17 +101,13 @@
           </select> 
         </td>
       </tr>    
-      <!-- <tr>
-        <td><b>Archive?</b></td>
-        <td>
-          <input type="checkbox">
-        </td>
-      </tr>   -->
       <tr>
-        <td colspan="2"><input type="submit" value="Enter" /></td>   
+        <td colspan="4"><input type="submit" value="Enter Application" /></td>   
       </tr>
     </table>
-  </form>
+</fieldset>
+</form>  
+</div>
 
 </body>
 </html>
