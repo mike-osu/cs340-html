@@ -15,18 +15,18 @@
       <li id="menuItem"><a href="applications.html">Applications</a></li>
     </ul>  
 
-    <ul>
-      <li>List companies</li>
-      <li>Enter a new company</li>
-    </ul>
+  <br>
+  <h2>Job App Tracker:  Add a New Company</h2>
+  <p></p>
+  <br>
 
     <table class="aTable">
       <tr>
         <th>company_id</th>
-        <th>name</th>
-        <th>location</th>
-        <th>industry</th>
-        <th>size</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Industry</th>
+        <th>Size</th>
       </tr>
       <tr>
         <td>1</td>
@@ -51,24 +51,30 @@
       </tr>
     </table>    
 
-    <br /><br />
 
-    <form>
+    <div id="form">
+      <form>
+        <fieldset>
+        <legend><h3>Add a Company
+          <small>( * indicates a required field )</h3></legend>
       <table cellpadding="4" cellspacing="4">
         <tr>
-          <td>name</td><td><input text /></td>
+          <td>Name *</td><td><input text /></td>
         </tr>
-          <td>location</td><td><input text /></td>
+          <td>Location *</td><td><input text /></td>
         <tr>
-          <td>industry</td><td><input text /></td>
-        </tr>
-        <tr>
-          <td>size <small>(number)</small></td><td><input text /></td>
+          <td>Industry *</td><td><input text /></td>
         </tr>
         <tr>
-          <td colspan="2"><input type="submit" value="Add" /></td>  
+          <td>Size * </td><td><input text placeholder="Enter a number"/></td>
+        </tr>
+        <tr>
+          <td colspan="4"><input type="submit" value="Add Company" /></td>  
         </tr>
       </table>
-    </form>
+    </fieldset>
+  </form>  
+  </div>
+
 </body>
 </html>
